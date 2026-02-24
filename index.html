@@ -18,8 +18,41 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <style>
+      * {
+        font-family: 'Outfit', sans-serif;
+      }
+    </style>
 </head>
-<body>
+<body class="bg-[#F8FAFC]">
+    <header class="w-[90%] md:w-[80%] mx-auto">
+      <h1 class="text-3xl md:text-5xl font-bold text-black py-5">
+        Job Application Tracker
+      </h1>
+      <div class="grid grid-cols-3 gap-2 md:gap-6">
+        <div
+          class="bg-white shadow-md p-4 rounded-[6px] border-gray-200 space-y-2"
+        >
+          <p class="text-sm font-semibold text-[#323B49]">Total</p>
+          <p id="total" class="text-3xl font-bold">0</p>
+        </div>
+
+        <div
+          class="bg-white shadow-md p-4 rounded-[6px] border-gray-200 space-y-2"
+        >
+          <p class="text-sm font-semibold text-[#323B49]">Interview</p>
+          <p id="interviewCount" class="text-3xl font-bold text-green-600">0</p>
+        </div>
+
+        <div
+          class="bg-white shadow-md p-4 rounded-[6px] border-gray-200 space-y-2"
+        >
+          <p class="text-sm font-semibold text-[#323B49]">Rejected</p>
+          <p id="rejectedCount" class="text-3xl font-bold text-red-600">0</p>
+        </div>
+      </div>
+    </header>
   
 </body>
 </html>
